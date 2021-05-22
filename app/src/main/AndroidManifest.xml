@@ -12,7 +12,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar">
         <activity android:name=".DetailActivity">
-
         </activity>
             <activity android:name=".MainActivity"
                 android:theme = "@style/SplashTheme"
@@ -20,9 +19,9 @@
                 <intent-filter>
                     <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
+                    <action android:name="android.intent.action.VIEW"/>
             </intent-filter>
         </activity>
-
     </application>
 
 </manifest>
