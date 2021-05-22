@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Eogsaepul</string>
+    <string name="name">댓글1</string>
+    <string name="content">안녕하세요</string>
+    <string name="rec">재밌다!</string>
+    <string name="plus">나도 말할래!</string>
+    <string name="num">651</string>
+    <string name="input">댓글을 입력하세요!</string>
 </resources>
