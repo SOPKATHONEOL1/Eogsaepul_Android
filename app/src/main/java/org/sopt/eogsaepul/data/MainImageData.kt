@@ -1,4 +1,4 @@
-package org.sopt.eogsaepul
+package org.sopt.eogsaepul.data
 
 data class MainImageData(
     val mainImage: String,
