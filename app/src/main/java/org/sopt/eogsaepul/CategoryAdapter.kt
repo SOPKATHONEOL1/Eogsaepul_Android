@@ -42,7 +42,8 @@ class CategoryAdapter : RecyclerView.Adapter<CategoryAdapter.CategoryViewHolder>
             binding.tvCategoryTitle.text = categoryData.categoryTitle
             itemView.setBackgroundResource(R.color.white)
             itemView.setOnClickListener {
-                itemView.setBackgroundResource(R.drawable.button_tab_box)
+                if (position==3)
+                    itemView.setBackgroundResource(R.drawable.button_tab_box)
             }
         }
     }
