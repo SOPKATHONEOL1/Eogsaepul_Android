@@ -8,7 +8,13 @@ import org.sopt.eogsaepul.databinding.ItemDetailBinding
 
 class DetailListAdapter : RecyclerView.Adapter<DetailListAdapter.DetailListViewHolder>(){
     lateinit var binding: ItemDetailBinding
-    val detailList = mutableListOf<DetailListInfo>()
+    private val _data = mutableListOf<DetailListInfo>()
+    var data: List<DetailListInfo> = _data
+        set(value) {
+            _data.clear()
+            _data.addAll(value)
+            notifyDataSetChanged()
+        }
 
     class DetailListViewHolder(private val binding: ItemDetailBinding) : RecyclerView.ViewHolder(binding.root) {
         fun onBind(detailList: DetailListInfo) {
@@ -25,11 +31,11 @@ class DetailListAdapter : RecyclerView.Adapter<DetailListAdapter.DetailListViewH
     }
 
     override fun onBindViewHolder(holder: DetailListViewHolder, position: Int) {
-        holder.onBind(detailList[position])
+        holder.onBind(_data[position])
     }
 
     override fun getItemCount(): Int {
-        return detailList.size
+        return _data.size
     }
 
 

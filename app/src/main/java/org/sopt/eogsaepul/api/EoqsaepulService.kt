@@ -8,8 +8,6 @@ interface EoqsaepulService {
 
     )
 
-<<<<<<< Updated upstream
+
 }
-=======
-}
->>>>>>> Stashed changes
+
