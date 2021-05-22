@@ -1,6 +1,6 @@
 package org.sopt.eogsaepul.data
 
 data class MainImageData(
-    val mainImage: String,
+    val mainImage: Int,
     val mainTitle: String
 )
