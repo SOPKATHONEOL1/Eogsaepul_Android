@@ -64,11 +64,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="8dp"
             android:text="@string/plus"
             android:textColor="@color/detail_input_click"
             app:layout_constraintStart_toEndOf="@+id/tv_cmt_rec"
-            app:layout_constraintTop_toBottomOf="@+id/tv_cmt_content" />
+            app:layout_constraintTop_toTopOf="@+id/tv_cmt_rec" />
 
         <TextView
             android:id="@+id/tv_cmt_num"
