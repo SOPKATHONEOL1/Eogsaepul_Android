@@ -37,7 +37,7 @@ class CategoryFragment:Fragment() {
             it.orientation = LinearLayoutManager.HORIZONTAL
         }
 
-        categoryAdapter.categroyList.addAll(
+        categoryAdapter.categoryList.addAll(
             listOf<CategoryData>(
                 CategoryData(
                     categoryTitle = "남자 연예인"
