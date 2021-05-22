@@ -17,8 +17,10 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        val categoryFragment = CategoryFragment()
         val mainImageFragment = MainImageFragment()
         val transaction = supportFragmentManager.beginTransaction()
+        transaction.add(R.id.fg_category, categoryFragment)
         transaction.add(R.id.fg_main, mainImageFragment)
         transaction.commit()
 

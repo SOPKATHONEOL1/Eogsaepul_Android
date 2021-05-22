@@ -1,8 +1,11 @@
 package org.sopt.eogsaepul
 
+import android.content.Intent
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import org.sopt.eogsaepul.data.MainImageData
 import org.sopt.eogsaepul.databinding.ItemMainImgBinding
 
 class MainImageAdapter: RecyclerView.Adapter<MainImageAdapter.MainViewHolder>() {
@@ -17,9 +20,6 @@ class MainImageAdapter: RecyclerView.Adapter<MainImageAdapter.MainViewHolder>() 
             parent,
             false
         )
-
-        binding.ivMainImg.clipToOutline = true
-
         return MainViewHolder(binding)
     }
 
@@ -39,6 +39,10 @@ class MainImageAdapter: RecyclerView.Adapter<MainImageAdapter.MainViewHolder>() 
 
             binding.tvMainTitle.text = mainImageData.mainTitle
 
+            itemView.setOnClickListener{ view ->
+                val intent = Intent(view.context, DetailActivity::class.java)
+                view.context.startActivity(intent)
+            }
 
         }
     }
