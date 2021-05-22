@@ -1,5 +1,6 @@
 package org.sopt.eogsaepul
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import org.sopt.eogsaepul.data.DetailDataSource
@@ -16,6 +17,7 @@ class DetailActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityDetailBinding.inflate(layoutInflater)
         initDetailView()
+        initDetailButton()
         setContentView(binding.root)
     }
 
@@ -29,5 +31,12 @@ class DetailActivity : AppCompatActivity() {
     private fun fetchData() : MutableList<DetailListInfo> {
         detailDataSource = LocalDetailDataSource()
         return detailDataSource.fetchData()
+    }
+
+    private fun initDetailButton(){
+        binding.ivBack.setOnClickListener {
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
+        }
     }
 }
