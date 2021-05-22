@@ -6,4 +6,6 @@
     <string name="plus">나도 말할래!</string>
     <string name="num">651</string>
     <string name="input">댓글을 입력하세요!</string>
+    <string name="input_click">입력</string>
+    <string name="category">카테고리명</string>
 </resources>
