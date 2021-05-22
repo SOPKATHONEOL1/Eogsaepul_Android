@@ -38,3 +38,5 @@
 - 서버 연결 위한 response / request 데이터 클래스 작성
 - 메인 뷰 오류 수정
 - 카테고리 버튼 이벤트
+
+![녹화_2021_05_23_08_15_25_301](https://user-images.githubusercontent.com/59547069/119243364-e2d98600-bba0-11eb-9481-a2aa7df024c4.gif)
