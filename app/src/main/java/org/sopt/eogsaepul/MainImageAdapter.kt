@@ -18,8 +18,6 @@ class MainImageAdapter: RecyclerView.Adapter<MainImageAdapter.MainViewHolder>() 
             false
         )
 
-        binding.ivMainImg.clipToOutline = true
-
         return MainViewHolder(binding)
     }
 
