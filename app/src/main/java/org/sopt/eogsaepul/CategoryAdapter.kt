@@ -1,6 +1,8 @@
 package org.sopt.eogsaepul
 
 import android.content.Intent
+import android.graphics.Color
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
@@ -37,9 +39,11 @@ class CategoryAdapter: RecyclerView.Adapter<CategoryAdapter.CategoryViewHolder>(
         private val binding: ItemCategoryBinding
     ): RecyclerView.ViewHolder(binding.root){
         fun onBind(categoryData: CategoryData){
-
             binding.tvCategoryTitle.text = categoryData.categoryTitle
-
+            itemView.setBackgroundResource(R.color.white)
+            itemView.setOnClickListener{
+                itemView.setBackgroundResource(R.drawable.button_tab_box)
+            }
         }
     }
 
