@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import org.sopt.eogsaepul.data.MainImageData
 import org.sopt.eogsaepul.databinding.FragmentMainImgBinding
 
 class MainImageFragment: Fragment() {

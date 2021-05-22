@@ -6,5 +6,5 @@
     <color name="white">#FFFFFF</color>
     <color name="black">#000000</color>
     <color name="detail_input">#FFF9F4</color>
-
+    <color name="detail_input_click">#ff9e2d</color>
 </resources>

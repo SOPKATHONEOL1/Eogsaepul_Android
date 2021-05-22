@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailActivity"
+    android:background="@color/white">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="11dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@color/white"
+        android:elevation="10dp">
+
+        <ImageButton
+            android:id="@+id/ivBack"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="#00000000"
+            android:src="@drawable/icon_arrow"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:text="카테고리명"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toEndOf="@+id/ivBack"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <ImageView
+        android:id="@+id/iv_detail_img"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/rectangle_32"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.709"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_comment_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_detail_img"/>
+
+    <EditText
+        android:id="@+id/et_detail_input"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:hint="@string/input"
+        android:textColorHint="@color/detail_input_click"
+        android:textColor="@color/detail_input_click"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/detail_input"
+        android:textSize="12sp"
+        android:paddingStart="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/input_click"
+        android:textColor="@color/detail_input_click"
+        android:textSize="14sp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="7dp"
+        android:layout_marginTop="9dp"
+        app:layout_constraintTop_toTopOf="@id/et_detail_input"
+        app:layout_constraintEnd_toEndOf="@+id/et_detail_input"
+        app:layout_constraintBottom_toBottomOf="@id/et_detail_input"/>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
