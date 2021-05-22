@@ -38,7 +38,7 @@ class MainImageAdapter: RecyclerView.Adapter<MainImageAdapter.MainViewHolder>() 
         fun onBind(mainImageData: MainImageData){
 
             binding.tvMainTitle.text = mainImageData.mainTitle
-            
+
 
         }
     }
